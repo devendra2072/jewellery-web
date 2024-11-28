@@ -1,0 +1,1038 @@
+/* --------------This is a header section-----------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    flex-wrap: wrap-reverse;
+    background-color: ghostwhite;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    color: purple;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    font-family: Calibri (Body);
+    box-shadow: 1px 2px 5px 1px black;
+    text-shadow: 5px 5px 5px black;
+}
+
+header marquee {
+    color: purple;
+}
+
+marquee {
+    flex-wrap: wrap-reverse;
+    word-spacing: 3px;
+    color: blue;
+}
+
+/* ------------------only for button hover ke liye------------------ */
+
+button:hover {
+    background-color: lime;
+    color: crimson;
+    padding: 10px;
+    font-size: 10px;
+}
+
+
+
+/* -----------------this is a navbar section------------------ */
+.navbar {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 2px 1px 5px 1px black;
+}
+
+li span a {
+    font-size: 35px;
+}
+
+.navbar label {
+    display: none;
+}
+
+#demo {
+    display: none;
+}
+
+#demo:checked~.navbar .ul {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 90px;
+    }
+
+    .navbar label {
+        display: block;
+    }
+
+    .navbar .ul {
+        display: none;
+        position: absolute;
+        top: 310px;
+        width: 100%;
+        background-color: blue;
+    }
+}
+
+.navbar img {
+    width: 150px;
+    mix-blend-mode: darken;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    border-radius: 20px;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 40px;
+    gap: 40px;
+    font-size: 25px;
+    /* display: none;  */
+}
+
+/* .ul li a::after {
+    content: "";
+    background-color: red;
+    width: 0;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    bottom: -10px;
+}
+
+.ul li a:hover::after {
+    font-size: 50px;
+    width: 100%;
+    transition: .5s;
+}  */
+
+.ul li:hover {
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parent h1 {
+    text-align: depth;
+    font-size: 60px;
+    margin-left: 250px;
+}
+
+.parent {
+    background-image: url(nekles1.jpg);
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: -30px;
+    align-items: center;
+    padding-left: 50px;
+    font-style: italic;
+    border: 5px solid rgb(218, 218, 217);
+    font-family: cursive;
+    box-shadow: 3px 4px 5px 2px black;
+    text-shadow: 2px 2px 2px purple;
+}
+
+.parent p {
+    font-weight: bold;
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+.parent .ch1 button a {
+    flex-wrap: wrap-reverse;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.parent .ch1 button {
+    margin-left: 250px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    border: 5px;
+    border-color: aliceblue;
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+/*---------------------- this is grid section---------------*/
+
+.spotlight {
+    margin-left: 15px;
+}
+
+.spotlight h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.parentSpotlight {
+    flex-wrap: wrap-reverse;
+    display: grid;
+    column-gap: 20px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(15, 300px);
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .parentSpotlight {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .parentSpotlight {
+        grid-template-columns: auto;
+    }
+}
+
+/*.cs {
+                border: 5px solid;
+              }*/
+.csdis {
+    background-color: rgb(200, 44, 44);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    color: aliceblue;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.csdes {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(65, 63, 63);
+}
+
+.disPrice {
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.oriPrice {
+    color: gray;
+    text-decoration:line-through;
+}
+
+.cs:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+.climbers img:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+.climbers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.era {
+    box-shadow: 5px 10px 10px 2px black;
+}
+
+.era2 {
+    box-shadow: 5px 10px 10px 2px black;
+}
+
+@media screen and (max-width: 600px) {
+    .climbers img {
+        width: 100%;
+    }
+}
+
+.parent1 {
+    flex-wrap: wrap-reverse;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    margin-bottom: 30px;
+    /* border: 5px solid rgb(11, 0, 0); */
+    position: relative;
+    animation-name: slie;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow: 5px 10px 10px 1px black;
+}
+
+.parent1 img {
+    box-shadow: 4px 4px 5px 1px black;
+}
+
+.parent1 :hover img {
+    border: 2px solid black;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.parent1 h1 {
+    text-align: center;
+}
+
+.parent1 p {
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    color: darkmagenta;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.gift {
+    flex-wrap: wrap-reverse;
+    background-color: gray;
+    mix-blend-mode: darken;
+}
+
+/*----------- this is 2 bacground image set formate section----------- */
+
+.bgi1 {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bgi1 a {
+    text-decoration: none;
+}
+
+.bgimg1 {
+    box-shadow: 2px 3px 10px 1px black;
+    background-image: url(g.avif);
+    height: 420px;
+    width: 580px;
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    margin-left: 20px;
+}
+
+.bgimg2 {
+    box-shadow: 2px 3px 10px 2px black;
+    background-image: url(payal2.jpg);
+    height: 420px;
+    width: 600px;
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+.bgimg3 {
+    box-shadow: 2px 3px 10px 2px black;
+    background-image: url(bgdiamonds.avif);
+    height: 420px;
+    width: 550px;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    margin-right: 20px;
+}
+
+.bgi1 button {
+    box-shadow: 2px 3px 5px 2px black;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    background-color: beige;
+    margin-left: 10px;
+    margin-top: 195px;
+    font-family: sans-serif;
+}
+
+.bgi1 .bgimg1 p {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: aqua;
+    padding-left: 10px;
+    font-family: monospace;
+}
+
+.bgi1 .bgimg1 h1 {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: yellowgreen;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.bgi1 .bgimg2 p {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: darkblue;
+    padding-left: 10px;
+    font-family: monospace;
+}
+
+.bgi1 .bgimg2 h1 {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.bgi1 .bgimg3 p {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+    padding-left: 10px;
+    font-family: monospace;
+}
+
+.bgi1 .bgimg3 h1 {
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: crimson;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+/* ------------------------complete 2 bacground image section----------- */
+.main {
+
+    flex-wrap: wrap-reverse;
+}
+
+.main p {
+    text-shadow: 2px 2px 3px purple;
+    text-align: center;
+    color: maroon;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    font-family: cursive;
+}
+
+.main h1 {
+    text-shadow: 3px 5px 5px red;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: monospace;
+}
+
+.parent3 {
+    box-shadow: 2px 3px 5px 2px rebeccapurple;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.parent3 :hover img {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.parent3 h1 {
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.parent3 p {
+    font-size: 20px;
+    color: darkred;
+    font-weight: bold;
+    margin-top: -10px;
+    font-family: sans-serif;
+}
+
+/* ---------------------------this is a bangles section=-----------------*/
+.parent4 {
+    flex-wrap: wrap-reverse;
+    background-image: url(bangles1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    align-items: center;
+    text-align: left;
+    padding: 140px;
+    font-style: italic;
+    color: white;
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px 2px black;
+    text-shadow: 2px 2px 4px red;
+}
+
+.parent4 a {
+    text-decoration: none;
+}
+
+.parent4 button {
+    font-size: 30px;
+}
+
+.ch15 h1 {
+    margin-top: -50px;
+    margin-left: -70px;
+    font-family: Pristina;
+    font-weight: 100;
+}
+
+.ch15 p {
+    color: black;
+    margin-left: -70px;
+    margin-top: -65px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.ch15 button {
+    border-radius: 0%;
+    color: red;
+    background-color: white;
+    margin-left: -80px;
+    margin-top: -100px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+/*------------------- this is logo section----------------- */
+.parent5 {
+    flex-wrap: wrap-reverse;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 2px 3px 5px 2px black;
+    text-shadow: 2px 2px 4px red;
+}
+
+.parent5 img:hover {
+    transform: scale(1.23);
+    transition: transform 0.10s;
+}
+
+.parent5 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    mix-blend-mode: difference;
+}
+
+.main2 p {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: underline;
+    font-size: 30px;
+    color: darkmagenta;
+    font-family: Wingdings 3;
+}
+
+
+.main2 {
+    flex-wrap: wrap-reverse;
+    text-shadow: 2px 3px 2px seagreen;
+}
+
+.main2 h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: Wingdings 3;
+}
+
+.parent6 {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    color: forestgreen;
+    font-style: italic;
+}
+
+.parent6 h1 {
+    font-family: Pristina;
+}
+
+.parent6 :hover img {
+    border: 3px solid mediumvioletred;
+    cursor: pointer;
+}
+
+.parent6 p {
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 3px black;
+}
+
+.ch22 {
+    padding-top: 30px;
+
+}
+
+.ch23 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ch24 {
+    padding-top: 30px;
+
+}
+
+.main3 {
+    text-shadow: 2px 3px 3px slategrey;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main3 p {
+    font-size: 30px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: -25px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: Algerian;
+}
+
+.main3 h1 {
+    text-shadow: 2px 3px 3px aquamarine;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    font-family: Castellar;
+}
+
+.main3 h2 {
+    text-shadow: 5px 5px 5px red;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 100px;
+    margin-top: -65px;
+}
+
+.para1 {
+    text-shadow: 2px 3px 2px aquamarine;
+    flex-wrap: wrap-reverse;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -55px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-widht: 600px) {
+    .parent7 {
+        width: 100%;
+    }
+
+    .parent8 {
+        width: 100%;
+    }
+}
+
+.parent7 {
+    text-shadow: 5px 5px 5px black;
+    flex-wrap: wrap-reverse;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.ph {
+    font-size: 80px;
+    font-family: serif;
+}
+
+.phh {
+    font-size: 80px;
+    margin-left: 30px;
+    margin-top: -80px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.phhh {
+    font-size: 80px;
+    margin-top: -80px;
+    font-family: serif;
+}
+
+.para2 {
+    text-shadow: none;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+.hw {
+    background-color: black;
+    color: antiquewhite;
+    margin-right: 555px;
+    font-size: 20px;
+    font-family: serif;
+    padding: 15px;
+}
+
+.parent8 {
+    text-shadow: 5px 5px 5px black;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    animation-name: slid;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.parent8 img {
+    margin-right: 200px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.ph1 {
+    font-size: 80px;
+    font-family: serif;
+}
+
+.phh1 {
+    font-size: 80px;
+    margin-left: 30px;
+    margin-top: -80px;
+}
+
+.phhh1 {
+    font-size: 80px;
+    margin-top: -80px;
+    font-family: serif;
+}
+
+.para3 {
+    text-shadow: none;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -50px;
+    font-family: cursive;
+}
+
+.ch26 button {
+    background-color: black;
+    color: antiquewhite;
+    margin-left: -5px;
+    font-size: 20px;
+    font-family: serif;
+    padding: 15px;
+    border-radius: 0px;
+}
+
+
+.parent8a {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.parent8a video:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+.parent8a video {
+    box-sizing: border-box;
+    margin-top: 100px;
+    box-shadow: 20px 20px 5px 2px black;
+}
+
+.main4 {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.para4 {
+    text-shadow: 5px 5px 0px black;
+    color: goldenrod;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    text-decoration-line: underline;
+}
+
+.para5 {
+    color: black;
+    font-size: 60px;
+    font-family: Pristina;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration-line: underline;
+}
+
+.parent9 {
+    text-shadow: 1px 1px 1px black;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.parent9 img {
+    box-shadow: 3px 5px 4px 2px black;
+    border: 3px solid black;
+}
+
+.parent9 img:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+.parent9 p {
+    color: purple;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.parent9 a {
+    text-decoration: none;
+}
+
+.parent9 button {
+    text-align: center;
+    /* font-family: monospace; */
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.parent10 {
+    text-shadow: 5px 5px 5px white;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    background-color: lightgray;
+    font-size: 30px;
+    font-family: Bodoni MT;
+}
+
+.parent10 button {
+    border-radius: 0px;
+    font-size: 25px;
+    color: darkgoldenrod;
+}
+
+
+.de {
+    padding-bottom: 30px;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.de img:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s;
+}
+
+.de img {
+    box-shadow: 5px 5px 5px 2px black;
+}
+
+.parent11 {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightgray;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.parent11 p:first-line {
+    color: black;
+    font-size: 40px;
+}
+
+.parent11 p {
+    color: darkgoldenrod;
+}
+
+.parent12 {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.parent12 input {
+    width: 40%;
+    padding: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    input {
+        width: 50%;
+    }
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.parent12 input {
+    border: 1px solid black;
+    border-radius: 0px;
+    margin: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.parent12 button {
+    background-color: black;
+    margin-left: -25px;
+    padding: 8px;
+}
+
+.parent12 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* -------------------this is last list menu ba footer section------------------------ */
+.parent2 {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.c {
+    padding-left: 50px;
+}
+
+.ch31 {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.c1 {
+    color: crimson;
+}
+
+.c2 {
+    color: navy;
+}
+
+.c3 {
+    color: red;
+}
+
+.c6 {
+    color: red;
+}
+
+.c8 {
+    color: red;
+}
+
+.c9 {
+    color: yellow;
+}
+
+.c10 {
+    color: green;
+}
+
+.para6 {
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    padding-top: 10px;
+}
